@@ -1,0 +1,288 @@
+.appointment-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+
+.container {
+    width: 85vw;
+    height: 85vh;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(240, 227, 227, 0.352);
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.description h2 {
+    margin: 10px 20px;
+}
+
+.description li {
+    margin: 10px 0;
+}
+
+.carousel {
+    width: 450px;
+    padding: 10px 50px;
+}
+
+.carousel img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.carousel ul {
+    margin: 10px 0;
+}
+
+.doc-carousel li {
+    margin: 0 10px;
+    text-align: start;
+    list-style: disc;
+} 
+
+.carousel .ibutton {
+    padding: 0;
+    width: 93%;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    background: rgba(0, 0, 0, 0);
+}
+
+.carousel .control-dots {
+    translate: -50px 0;
+    margin: 0;
+
+}
+
+
+
+.loadingPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+/* **********Booking********* */
+.bookingPage {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.bookingTop {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.bookingPage input,
+.bookingPage select {
+    margin: 10px 0;
+
+}
+
+
+.bookingSlots {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.date-time {
+    margin: 0 30px;
+    --ion-color-primary: #9c89ff;
+    background-color: rgba(240, 227, 227, 0.352);
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    --ion-color-step-500: white;
+    --ion-color-step-650: white;
+    --ion-color-new-contrast: white;
+    --wheel-highlight-background: #ffa500;
+    --wheel-fade-background-rgb: rgb(255,255,255);
+    flex: 1;
+}
+
+.bookingCard {
+    width: 300px;
+    height: 350px;
+    background-color: rgba(240, 227, 227, 0.352);
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 20px;
+    flex: 1;
+}
+.bookingCard p{
+    font-size: 1rem;
+}
+.bookingCard img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* This is CSS of Radio Buttons of Bookings.jsx */
+
+.radio-item {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: rgba(240, 227, 227, 0.352);
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.radio-label {
+    display: inline-block;
+    width: 150px;
+    /* Adjust width as needed */
+    padding: 15px 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.radio-label.selected {
+    background-color: #5252ff;
+
+}
+
+.radio-input {
+    display: none;
+}
+
+
+.bookingForm {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.bookingForm h2{
+    margin-left: 10px;
+}
+.bookingForm .section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.field {
+    flex: 1;
+    margin: 10px;
+}
+
+.bookBtn{
+    margin-left: 10px;
+}
+li.slide::marker{
+    display: none;
+  }
+  
+
+@media only screen and (max-width: 1250px) {
+    .container {
+        flex-direction: column;
+        height: max-content;
+        width: 90vw;
+        margin: 20px;
+    }
+    .container h2 {
+     font-size: 1.8rem;
+    }
+    .container p {
+     font-size: 1rem;
+    }
+
+    .doc-carousel{
+        padding: 15px 0px;
+    }
+    .appointment-body {
+        height: max-content;
+        margin: 50px 0px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 770px) {
+
+
+    .carousel {
+        width: 250px;
+        padding: 0px;
+    }
+
+    .carousel.carousel-slider .control-arrow:hover {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .carousel .control-dots {
+        translate: 0;
+        margin: 0;
+    
+    }
+
+    .bookingPage {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bookingTop {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .date-time {
+        margin: 30px 0;
+        width: 90vw;
+    }
+
+    .bookingForm{
+        margin: 0;
+        margin-top: 30px;
+    }
+    .bookingForm .section {
+        display: block;
+    }
+}
